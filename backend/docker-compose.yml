@@ -1,0 +1,29 @@
+version: '3'
+services:
+  db:
+    image: postgres
+    environment:
+      POSTGRES_USER: martin
+      POSTGRES_PASSWORD: martin
+      POSTGRES_DB: aptechnology
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  app:
+    build: .
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
+    environment:
+      DATABASE_HOST: db
+      DATABASE_PORT: 5432
+      DATABASE_USERNAME: martin
+      DATABASE_PASSWORD: martin
+      DATABASE_NAME: aptechnology
+      JWT_SECRET: ZhW671PvISYsymzQkQC+RDwf9PgTaidrktrm9Ow0zzN3wKQoF7+QaZ+AHFHNu69Y
+
+volumes:
+  postgres_data:
