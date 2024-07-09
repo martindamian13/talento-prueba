@@ -66,7 +66,7 @@ El servidor se ejecutará en http://localhost:8000.
 1. Navega al directorio del frontend:
 
 ```bash
-cd task-management-frontend
+cd frontend
 ```
 2. Instala las dependencias:
 
