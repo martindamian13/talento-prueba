@@ -11,6 +11,7 @@ export default defineNuxtConfig({
 
   axios: {
     baseURL: 'http://localhost:8000', // Cambia esta URL si tu API está en otra dirección
+    credentials: true, //Incluir credenciales
   },
 
   plugins: [
