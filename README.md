@@ -115,7 +115,7 @@ El frontend se ejecutará en http://localhost:3000.
 ### Estructura del proyecto
 #### Backend
 ```css
-task-management-backend/
+backend/
 ├── src/
 │   ├── auth/
 │   ├── tasks/
@@ -128,7 +128,7 @@ task-management-backend/
 ```
 #### Frontend
 ```css
-task-management-frontend/
+frontend/
 ├── assets/
 │   └── css/
 │       └── tailwind.css
